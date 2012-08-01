@@ -1,11 +1,11 @@
-# John Piasetzki’s dotfiles
+# Billy Vong's dotfiles
 
 ## Installation
 
 ```
-git clone https://github.com/jpiasetz/dotfiles.git ~/.dotfiles
+git clone https://github.com/billyvg/dotfiles.git ~/.dotfiles
 cd .dotfiles
-cp post-commit ./git/hooks/
+cp post-commit ./.git/hooks/
 ```
 
 Edit the README.md with your name and modify or copy the dotfiles as need.

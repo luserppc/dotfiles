@@ -1,3 +1,28 @@
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+[core]
+  quotepath = false
+  whitespace = trailing-space,space-before-tab
+  editor = /usr/bin/mvim
 [user]
-	name = John Piasetzki
-	email = John.Piasetzki@gmail.com
+	name = Billy Vong
+	email = billyvg@gmail.com
+[diff]
+  tool = Kaleidoscope
+  renames = copies
+[merge]
+  stat = true
+[color]
+  ui = auto
+[branch]
+  autosetupmerge = true
+[difftool "Kaleidoscope"]
+  cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool]
+  prompt = false
+[push]
+  default = upstream
+[rerere]
+  enabled = 1

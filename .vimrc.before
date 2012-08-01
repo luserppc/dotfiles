@@ -1,0 +1,6 @@
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+autocmd User Rails/**/* set tabstop=4
+autocmd User Rails/**/* set shiftwidth=4
+autocmd User Rails/**/* set softtabstop=4

@@ -10,10 +10,6 @@ map Y y$
 nnoremap j gj
 nnoremap k gk
 
-set ts=2
-set sts=2
-set sw=2
-
 if has("statusline") && !&cp
   set laststatus=2  " always show the status bar
 
@@ -43,3 +39,5 @@ if has("statusline") && !&cp
   set statusline+=Buf:#%n
   set statusline+=[%b][0x%B]
 endif
+
+let g:Powerline_symbols = 'fancy'

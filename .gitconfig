@@ -5,7 +5,7 @@
 [core]
   quotepath = false
   whitespace = trailing-space,space-before-tab
-  editor = /usr/bin/mvim
+  editor = /usr/bin/mvim -f
 [user]
 	name = Billy Vong
 	email = billyvg@gmail.com

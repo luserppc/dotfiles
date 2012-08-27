@@ -34,7 +34,10 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+unsetopt correct_all
+
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+export NODE_PATH=/usr/local/lib/node_modules
 
 [ -s "/Users/billy/.scm_breeze/scm_breeze.sh" ] && source "/Users/billy/.scm_breeze/scm_breeze.sh"
 

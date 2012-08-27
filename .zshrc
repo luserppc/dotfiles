@@ -42,3 +42,5 @@ export NODE_PATH=/usr/local/lib/node_modules
 [ -s "/Users/billy/.scm_breeze/scm_breeze.sh" ] && source "/Users/billy/.scm_breeze/scm_breeze.sh"
 
 export VIRTUAL_ENV_DISABLE_PROMPT=1
+
+source ~/.wooprarc

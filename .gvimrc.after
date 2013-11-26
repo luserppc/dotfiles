@@ -1,6 +1,6 @@
 if has("gui_running")
-      set guioptions=egmrt
-    endif
+    set guioptions=egmrt
+    set guifont=Menlo\ for\ Powerline
 endif
 colorscheme solarized
 

@@ -10,7 +10,7 @@ let g:airline_powerline_fonts = 1
 filetype off
 
 set rtp+=~/.janus/bundle/vundle/
-call vundle#rc()
+call vundle#rc("$HOME/.janus/bundle")
 
 " let Vundle manage Vundle
 " required!

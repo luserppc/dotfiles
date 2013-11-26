@@ -1,6 +1,10 @@
 let html_no_rendering=1
 colorscheme koehler
+"colorscheme solarized
 set cc=80
+set ts=4
+set sts=4
+set sw=4
 
 set nobackup
 set nowb
@@ -9,6 +13,8 @@ map Y y$
 
 nnoremap j gj
 nnoremap k gk
+
+call janus#disable_plugin('supertab')
 
 if has("statusline") && !&cp
   set laststatus=2  " always show the status bar
@@ -41,3 +47,9 @@ if has("statusline") && !&cp
 endif
 
 let g:Powerline_symbols = 'fancy'
+let g:SimpleJsIndenter_BriefMode = 1
+let g:ackprg = 'ag --nogroup --nocolor --column'
+let g:syntastic_javascript_checkers=['jshint']
+
+
+

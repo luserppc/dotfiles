@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="smt"
+ZbashSH_THEME="smt"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -32,9 +32,10 @@ ZSH_THEME="smt"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+source /opt/boxen/env.sh
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+# export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 
 [ -s "/Users/billy/.scm_breeze/scm_breeze.sh" ] && source "/Users/billy/.scm_breeze/scm_breeze.sh"
 

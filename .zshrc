@@ -1,11 +1,11 @@
-# Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
+# Path to your oh-my-zsh configuration.
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZbashSH_THEME="smt"
+ZSH_THEME="pureprompt"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -29,7 +29,7 @@ ZbashSH_THEME="smt"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git github brew osx)
 
 source $ZSH/oh-my-zsh.sh
 source /opt/boxen/env.sh
@@ -43,5 +43,10 @@ export NODE_PATH=/usr/local/lib/node_modules
 [ -s "/Users/billy/.scm_breeze/scm_breeze.sh" ] && source "/Users/billy/.scm_breeze/scm_breeze.sh"
 
 export VIRTUAL_ENV_DISABLE_PROMPT=1
+export EDITOR=vim
 
 source ~/.wooprarc
+
+bindkey "[A" history-beginning-search-backward
+bindkey "[B" history-beginning-search-forward
+

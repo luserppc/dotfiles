@@ -4,3 +4,29 @@ set softtabstop=4
 autocmd User Rails/**/* set tabstop=4
 autocmd User Rails/**/* set shiftwidth=4
 autocmd User Rails/**/* set softtabstop=4
+
+" required for Vundle
+filetype off
+
+set rtp+=~/.janus/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required!
+Bundle 'gmarik/vundle'
+
+" My Bundles here:
+"
+" original repos on github
+
+Bundle 'Shougo/vimproc.vim'
+Bundle 'Shougo/unite.vim'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'marijnh/tern_for_vim'
+Bundle 'pangloss/vim-javascript'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'bling/vim-airline'
+Bundle 'wavded/vim-stylus'
+
+" required for Vundle
+filetype plugin indent on

@@ -4,6 +4,7 @@ set softtabstop=4
 autocmd User Rails/**/* set tabstop=4
 autocmd User Rails/**/* set shiftwidth=4
 autocmd User Rails/**/* set softtabstop=4
+let g:airline_powerline_fonts = 1
 
 " required for Vundle
 filetype off

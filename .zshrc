@@ -31,18 +31,23 @@ ZSH_THEME="pureprompt"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git github brew osx)
 
-source $ZSH/oh-my-zsh.sh
-source /opt/boxen/env.sh
+[ -f $ZSH/oh-my-zsh.sh ] && source $ZSH/oh-my-zsh.sh
+[ -f "/opt/boxen/env.sh" ] && source "/opt/boxen/env.sh"
+[ -s "/Users/billy/.scm_breeze/scm_breeze.sh" ] && source "/Users/billy/.scm_breeze/scm_breeze.sh"
+[ -f "~/.wooprarc" ] && source "~/.wooprarc"
 
 # Customize to your needs...
-# export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+unsetopt correct_all
 
-[ -s "/Users/billy/.scm_breeze/scm_breeze.sh" ] && source "/Users/billy/.scm_breeze/scm_breeze.sh"
+#export PATH=/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/.rbenv/versions/1.9.3-p374/bin
+#export NODE_PATH=/usr/local/lib/node_modules
+
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 export EDITOR=vim
 
-source ~/.wooprarc
 
 bindkey "[A" history-beginning-search-backward
 bindkey "[B" history-beginning-search-forward

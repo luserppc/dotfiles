@@ -29,10 +29,12 @@ ZSH_THEME="pureprompt"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github brew osx)
+plugins=(git brew osx)
 
-source $ZSH/oh-my-zsh.sh
-source /opt/boxen/env.sh
+[ -f $ZSH/oh-my-zsh.sh ] && source $ZSH/oh-my-zsh.sh
+[ -f "/opt/boxen/env.sh" ] && source "/opt/boxen/env.sh"
+[ -s "/Users/billy/.scm_breeze/scm_breeze.sh" ] && source "/Users/billy/.scm_breeze/scm_breeze.sh"
+[ -f "~/.wooprarc" ] && source "~/.wooprarc"
 
 # Customize to your needs...
 unsetopt correct_all
@@ -40,12 +42,15 @@ unsetopt correct_all
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
 export NODE_PATH=/usr/local/lib/node_modules
 
-[ -s "/Users/billy/.scm_breeze/scm_breeze.sh" ] && source "/Users/billy/.scm_breeze/scm_breeze.sh"
+#export PATH=/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/.rbenv/versions/1.9.3-p374/bin
+#export NODE_PATH=/usr/local/lib/node_modules
+
+
+#if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 export EDITOR=vim
 
-source ~/.wooprarc
 
 bindkey "[A" history-beginning-search-backward
 bindkey "[B" history-beginning-search-forward

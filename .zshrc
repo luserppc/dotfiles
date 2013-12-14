@@ -34,7 +34,7 @@ plugins=(git github brew osx)
 [ -f $ZSH/oh-my-zsh.sh ] && source $ZSH/oh-my-zsh.sh
 [ -f "/opt/boxen/env.sh" ] && source "/opt/boxen/env.sh"
 [ -s "/Users/billy/.scm_breeze/scm_breeze.sh" ] && source "/Users/billy/.scm_breeze/scm_breeze.sh"
-[ -f "~/.wooprarc" ] && source "~/.wooprarc"
+[ -e ~/.wooprarc ] && source ~/.wooprarc
 
 # Customize to your needs...
 unsetopt correct_all

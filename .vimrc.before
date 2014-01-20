@@ -22,7 +22,7 @@ Bundle 'gmarik/vundle'
 
 Bundle 'Shougo/vimproc.vim'
 Bundle 'Shougo/unite.vim'
-Bundle 'Valloric/YouCompleteMe'
+"Bundle 'Valloric/YouCompleteMe'
 Bundle 'marijnh/tern_for_vim'
 Bundle 'pangloss/vim-javascript'
 Bundle 'nathanaelkane/vim-indent-guides'
@@ -31,3 +31,4 @@ Bundle 'wavded/vim-stylus'
 
 " required for Vundle
 filetype plugin indent on
+"let g:ycm_path_to_python_interpreter = '/opt/boxen/homebrew/bin/python'

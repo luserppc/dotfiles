@@ -6,6 +6,7 @@
   quotepath = false
   whitespace = trailing-space,space-before-tab
   editor = /usr/bin/mvim
+  excludesfile = /opt/boxen/config/git/gitignore
 [user]
 	name = Billy Vong
 	email = billyvg@gmail.com
@@ -16,6 +17,7 @@
   stat = true
 [color]
   ui = auto
+	diff = auto
 [branch]
   autosetupmerge = true
 [difftool "Kaleidoscope"]
@@ -26,3 +28,9 @@
   default = upstream
 [rerere]
   enabled = 1
+
+[credential]
+helper = /opt/boxen/bin/boxen-git-credential
+
+[hub]
+protocol = https

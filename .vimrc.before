@@ -22,12 +22,13 @@ Bundle 'gmarik/vundle'
 
 Bundle 'Shougo/vimproc.vim'
 Bundle 'Shougo/unite.vim'
-"Bundle 'Valloric/YouCompleteMe'
-Bundle 'marijnh/tern_for_vim'
+Bundle 'Valloric/YouCompleteMe'
+"Bundle 'marijnh/tern_for_vim'
 Bundle 'pangloss/vim-javascript'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'bling/vim-airline'
 Bundle 'wavded/vim-stylus'
+Bundle 'mxw/vim-jsx'
 
 " required for Vundle
 filetype plugin indent on

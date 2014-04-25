@@ -28,9 +28,8 @@
   default = upstream
 [rerere]
   enabled = 1
+[hub]
+protocol = https
 
 [credential]
 helper = /opt/boxen/bin/boxen-git-credential
-
-[hub]
-protocol = https

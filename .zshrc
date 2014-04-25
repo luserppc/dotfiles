@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="pureprompt"
+ZSH_THEME="pure"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -29,7 +29,7 @@ ZSH_THEME="pureprompt"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github brew osx)
+plugins=(git github brew osx history-substring-search)
 
 [ -f $ZSH/oh-my-zsh.sh ] && source $ZSH/oh-my-zsh.sh
 [ -f "/opt/boxen/env.sh" ] && source "/opt/boxen/env.sh"
@@ -47,8 +47,3 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 export EDITOR=vim
-
-
-bindkey "[A" history-beginning-search-backward
-bindkey "[B" history-beginning-search-forward
-

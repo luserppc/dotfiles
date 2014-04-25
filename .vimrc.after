@@ -49,7 +49,7 @@ endif
 let g:Powerline_symbols = 'fancy'
 " let g:SimpleJsIndenter_BriefMode = 1
 let g:ackprg = 'ag --nogroup --nocolor --column'
-let g:syntastic_javascript_checkers=['/opt/boxen/nodenv/shims/jshint']
+let g:syntastic_javascript_checkers=['jshint']
 
 
 

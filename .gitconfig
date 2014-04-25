@@ -5,7 +5,7 @@
 [core]
   quotepath = false
   whitespace = trailing-space,space-before-tab
-  editor = /usr/bin/mvim
+  editor = vim
   excludesfile = /opt/boxen/config/git/gitignore
 [user]
 	name = Billy Vong

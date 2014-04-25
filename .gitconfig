@@ -5,7 +5,7 @@
 [core]
   quotepath = false
   whitespace = trailing-space,space-before-tab
-  editor = /usr/bin/mvim
+  editor = vim
 [user]
 	name = Billy Vong
 	email = billyvg@gmail.com
@@ -26,3 +26,6 @@
   default = upstream
 [rerere]
   enabled = 1
+
+[hub]
+protocol = https
